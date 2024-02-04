@@ -16,6 +16,7 @@ This is to make the research paper easier to read and more accessible.
 - **process pdf from arxiv URL**: No need to download the pdf file, user can just provide the url to the pdf file.
 
 ## How to use - Input and output file set up
-- **Open Source Model Summarizer**: default input pdf directory is paper_pdf_repo/research_papers 
-- **Open Source Model Summarizer**: default output folder where pdf file with summarized report is created is paper_pdf_repo/summaries
-- **To use**: update the input file name, output file name, and pages to exclude in summarize_arxiv_paper.py (Will add this to streamlit UI in future)
+- **Setting up input file**: default input pdf file path/directory is paper_pdf_repo/research_papers. Save the file in that dir. 
+- **Setting up input file**: default output folder where pdf file with summarized report is created is paper_pdf_repo/summaries
+- **To use**: update the input file name, output file name, and pages to exclude (generally last few pages with references etc.) in summarize_arxiv_paper.py (Will add this to streamlit UI in future)
+- **Setting up OpenAI API**: Rename the .env-example file to .env file and update it with your OpenAI API key.
