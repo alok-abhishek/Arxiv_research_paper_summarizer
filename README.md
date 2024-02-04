@@ -1,6 +1,7 @@
 # arXiv Research Paper (PDF) Summarization Tool
 This repository houses a Python tool designed to process and summarize arXiv research papers (PDF files), making them more accessible and easier to digest.
-This tool creates a summarized report (a PDF file) of the research making the original research paper easier to read and more accessible.  
+This tool creates a summarized report (a PDF file) of the research making the original research paper easier to read and more accessible.
+ *This tool is intended for education and informational purposes only and original IP remains with the author of the research paper.* 
 
 ## Features
 
