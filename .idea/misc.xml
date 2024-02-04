@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="Black">
+    <option name="enabledOnSave" value="true" />
+    <option name="pathToExecutable" value="C:\Users\alok_\AppData\Local\Programs\Python\Python311\Scripts\black.exe" />
+    <option name="sdkName" value="Python 3.11 (summarize_arxiv_research_paper)" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (summarize_arxiv_research_paper)" project-jdk-type="Python SDK" />
 </project>
