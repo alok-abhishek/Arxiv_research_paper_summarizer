@@ -15,3 +15,7 @@ This is to make the research paper easier to read and more accessible.
 - **User Interface**: Create a streamlit user interface.
 - **process pdf from arxiv URL**: No need to download the pdf file, user can just provide the url to the pdf file.
 
+## Input and output files
+- **Open Source Model Summarizer**: default input pdf directory is paper_pdf_repo/research_papers 
+- **Open Source Model Summarizer**: default output folder where pdf file with summarized report is created is paper_pdf_repo/summaries
+- **To use**: update the input file name, output file name, and pages to exclude in summarize_arxiv_paper.py (Will add this to streamlit UI in future)
