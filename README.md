@@ -11,9 +11,10 @@ This tool creates a summarized report (a PDF file) of the research making the or
 
 ## How to use - Input and output file set up
 - **Setting up input file**: default input pdf file path/directory is paper_pdf_repo/research_papers. Save the file in that dir. 
-- **Setting up input file**: default output folder where pdf file with summarized report is created is paper_pdf_repo/summaries
+- **Setting up output file**: default output folder where pdf file with summarized report is created is paper_pdf_repo/summaries
 - **Setting up OpenAI API**: Rename the .env-example file to .env file and update it with your OpenAI API key.
-- **To use**: update the input file name, output file name, and pages to exclude (generally last few pages with references etc.) in summarize_arxiv_paper.py (Will add this to streamlit UI in future). 
+- **Install required libraries**: use pip install -r requirements.txt to install required python packages to run the program.
+- **Before Using**: update the input file name, output file name, and pages to exclude (generally last few pages with references etc.) in summarize_arxiv_paper.py (Will add this to streamlit UI in future). 
 - **How to run**: After setting up API key and adjusting file name, execute summarize_arxiv_paper.py to run the tool.
 
 

@@ -16,15 +16,13 @@ def summarize_local_pdf_using_openai(input_file, output_file, pages_to_exclude):
 
 base_input_path = "paper_pdf_repo/research_papers/"
 base_output_path = "paper_pdf_repo/summaries/"
-input_filename = (
-    "SLICEGPT_COMPRESS_LARGE_LANGUAGE_MODELS_BY_DELETING_ROWS_AND_COLUMNS.pdf"
-)
+input_filename = "LocMoE_A_Low_overhead_MoE_for_Large_Language_Model_Training.pdf"
 output_filename = (
-    "SLICEGPT_COMPRESS_LARGE_LANGUAGE_MODELS_BY_DELETING_ROWS_AND_COLUMNS_Summary.pdf"
+    "LocMoE_A_Low_overhead_MoE_for_Large_Language_Model_Training_Summary.pdf"
 )
 input_file = os.path.join(base_input_path, input_filename)
 output_file = os.path.join(base_output_path, output_filename)
-pages_to_exclude = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+pages_to_exclude = []
 
 
 summarize_local_pdf_using_openai(input_file, output_file, pages_to_exclude)
