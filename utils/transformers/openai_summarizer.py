@@ -10,7 +10,8 @@ import re
 dotenv.load_dotenv()
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-client = OpenAI(api_key=OPENAI_API_KEY)
+OPENAI_ORG_ID = os.environ.get("OPENAI_ORG_ID")
+client = OpenAI(api_key=OPENAI_API_KEY, organization=OPENAI_ORG_ID)
 
 
 prompt_augmentation_file = "utils/transformers/prompt_instructions.json"
@@ -46,7 +47,7 @@ def format_response(api_response):
 def openAIsummarizer(text):
     try:
         openai_response = client.chat.completions.create(
-            model="gpt-4-0125-preview",
+            model="gpt-4o-2024-08-06",
             messages=[
                 {
                     "role": "system",
@@ -67,7 +68,7 @@ def openAIsummarizer(text):
 def openAI_final_summarizer(fragment_summaries):
     try:
         openai_response = client.chat.completions.create(
-            model="gpt-4-0125-preview",
+            model="gpt-4o-2024-08-06",
             messages=[
                 {
                     "role": "system",
